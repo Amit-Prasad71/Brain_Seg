@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    margin: 15rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading{
+    margin: 4rem 0 2rem;
+    font-size: 2.5rem;
+}
+.text{
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+.photos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photos .item{
+    margin: 0 1rem;
+}
+.photos .item a{
+    display: block;
+    text-decoration: none;
+    color:black;
+}
+.photos .item a:hover{
+    text-decoration: underline;
+}
+.about-title-image{
+    height: 100px;
+    width: 100px;
+    margin: 0 1em;
+    border: solid 2px black;
+    border-radius: 100%;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../static/css/page.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <!-- <h1>Brain Tumor Prediction</h1> -->
+            <span class="material-symbols-outlined">neurology</span>
+        </div>
+        <ul>
+            
+            <li><a href="#predict-tumor">UPLOAD</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </nav>
+    <section id="title-div">        
+        <div>
+            <h1>Detecting Brain Tumors</h1>
+            <p>
+                Early detection of brain tumors can lead to more effective treatment options, better outcomes, and improved quality of life for patients.
+            </p>
+                
+            <a href="#brain-tumor-info" class="btn">
+                <span>Learn How</span>  
+                <span class="material-symbols-outlined" >arrow_forward</span>
+            </a>
+                
+            
+        </div>
+        <img src="../static/images/wall.png" alt="title-img">
+        
+    </section>
+    <section id="applications">
+        
+        <h1>The field of machine Learning and its medical applications</h1>
+        <div class = "container">
+            <div class="title">
+                <h4>Medical imaging analysis</h4>
+                <p>Machine learning algorithms can analyze medical images such as MRI, CT scans, and X-rays to detect tumors, aneurysms, and other abnormalities. This can lead to earlier detection and treatment of diseases</p>
+            </div>
+            <div  class="image">
+                <img src="../static/images/img1.jpg" alt="img1">
+            </div>
+        </div>
+        <div class = "container">
+            <div  class="image">
+                <img src="../static/images/img2.jpg" alt="img2">
+            </div>
+            <div class="title">
+                <h4>Personalized treatment plans</h4>
+                <p>Machine learning algorithms can analyze patient data to develop personalized treatment plans. This includes predicting the effectiveness of different treatments and medications for an individual patient, and identifying potential adverse drug reactions.</p>
+            </div>
+            
+        </div>
+        <div class = "container">
+            <div class="title">
+                <h4>Medical research</h4>
+                <p>Machine learning can be used to analyze large datasets to identify potential public health risks and assist with medical research.</p>
+            </div>
+            <div  class="image">
+                <img src="../static/images/img3.jpg" alt="img3">
+            </div>
+        </div>
+        <div class = "container">
+            <div  class="image">
+                <img src="../static/images/img4.jpg" alt="img4">
+            </div>
+            <div class="title">
+                <h4>Health monitoring</h4>
+                <p>Machine learning can be used to monitor and analyze patient data, such as heart rate and blood pressure, to detect potential health problems and prevent adverse events.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="brain-tumor-info">
+        
+        <div class = "container">
+            
+            <div class="title">
+                <h1>Detecting Brain Tumors and its Importance</h1>
+                <p>
+                    Early Diagnosis and Treatment of Brain Tumor is crucial for the well-being of patients. By providing access to the information about the tumors and the technologies available we aim to increase awareness and promote early detection of brain tumors. A process called Segmentation separates and identifies the different regions of the brain affected by a tumor using medical imaging techniques such as MRI, etc.
+                    There are numerous methods for the segmentation of brain tumors, including manual segmentation by radiologists and automated segmentation using machine learning. A presentation of the latter has been discussed here.
+                </p>
+            </div>
+            <div  class="image">
+                <img src="../static/images/segmented_example.gif" alt="tumor-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="nifti-section">
+        <h1>What is a <span>NIfTI</span> file?</h1>
+        <div class = "img-container">
+            <img src="../static/images/nifti_xaxis.gif" alt="gif1">
+            <img src="../static/images/nifti_zaxis.gif" alt="gif2">
+            <img src="../static/images/nifti_yaxis.gif" alt="gif3">
+        </div>
+        <p>
+            A commonly used medical image file format called NIfTI (Neuroimaging Informatics Technology Initiative) is used to store and distribute medical images such as MRI, CT and PET scans in a standard and consistent format. The NIfTI file format is designed to support both 2D and 3D medical imaging data, as well as time-series data. In addition to the image data, NIfTI files also contain metadata such as the image dimensions, voxel size, and other information related to the scan.
+            NIfTI files are widely used in medical imaging research and analysis, as they can be easily read and processed using a variety of software tools and libraries. They also support the incorporation of additional information, such as segmentation labels and statistical analyses, which can be stored in the same file.
+        </p>
+
+    </section>
+
+    <section id="predict-tumor">
+
+        <h1 class="predict-text"> PREDICTION</h1>
+        <div class="upload-div">
+            <form action="{{url_for('predict_nifti')}}" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/nii, image/nii.gz" >
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+
+    </section>
+    <section id="about">
+        
+            <div class="container">
+                <div class="text">
+                    <h1>Thank You!</h1>
+                    <p>if you have any queries do reach out to us at our socials.</p>
+                </div>
+                <div class="item">
+                    <h2>Authors </h2>
+                    <ul>
+                        <li> <a href="https://www.linkedin.com/in/sumit-prasad-9b5022196/">Sumit Prasad</a> </li>
+                        <li> <a href="https://www.linkedin.com/in/amit-prasad-2267b020b/">Amit Prasad </a> </li>
+                        <li> <a href="https://www.linkedin.com/in/avilash-nath-094a571a4/">Avilash Nath</a> </li>
+                    </ul>
+                </div>
+            
+                <div class="item">
+                    <h2>Useful Links </h2>
+                    <ul>
+                        <li> <a href="">Link 1</a> </li>
+                        <li> <a href="">Link 2</a> </li>
+                        <li> <a href="">Link 3</a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+        
+    </section>
+    <footer>
+        <p>&copy; 2023 | All rights reserved</p>
+    </footer>
+</body>
+</html>

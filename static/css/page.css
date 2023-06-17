@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: #0eb9ed;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 5rem 2rem;
+    color: #fff;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav div h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+nav ul li a{
+    letter-spacing: 0.05cm;
+    text-decoration: none;
+    color: #fff;
+    font-weight:400;
+    padding: 1px;
+}
+nav ul li a:hover{
+    border-bottom: solid 2px #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 48;
+    margin-left: 0.5rem;
+  }
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+#title-div{
+    padding:5rem 5rem 10rem;
+    line-height: 1.75;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: 500;
+    display: flex;
+    background-color: #0eb9ed;
+    color: #fff;
+}
+#title-div h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+#title-div p{
+    margin: 1rem 0 2rem;
+
+}
+
+#title-div a{
+    padding: 10px 5px 10px 10px;
+    background-color: #0eb9ed;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width:20%;
+    border: solid 2px #fff;
+}
+
+#title-div a:hover {
+    background-color: #fff;
+    color:#0eb9ed;
+}
+
+#title-div img{
+    height:50%;
+    width:50%;
+}
+
+
+#applications{
+    /* margin: 5rem 0; */
+    padding:2rem 6rem;
+}
+#applications h1{
+    margin:2.25rem 0 2.5rem;
+    text-align: center;
+    color:#0685ab;
+    font-size: 1.65rem;;
+}
+#applications .container{
+    display: flex;
+    justify-content: space-between; 
+    text-align: justify;
+    margin:1rem 7.5rem 0.5rem;
+    padding: 1rem;
+}
+#applications .container .title{
+    padding:0.5rem;
+    width:70%;
+}
+#applications .container .title h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color:#0695c1;  
+}
+#applications .container .title p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #7d7b7b;
+    font-weight: 500;
+}
+#applications .container .image img{
+    height:250px;
+    width:250px;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#brain-tumor-info{
+    padding:7% 15%;
+    background-color: #0eb9ed;
+    color:#fff;
+}
+#brain-tumor-info .container .title h1{
+    margin:0 0 2.5rem;
+    /* text-align: center; */
+    font-size: 2rem;;
+}
+#brain-tumor-info .container{
+    display: flex;
+    justify-content: space-between; 
+    text-align: justify;
+    margin:1rem 0 0.5rem;
+    padding: 1rem 0;
+}
+#brain-tumor-info .container .title{
+    padding:0.5rem 0;
+}
+#brain-tumor-info .container .title p{
+    font-size: 1.1rem;
+    line-height: 1.65;
+    font-weight: 500;
+    
+}
+#brain-tumor-info .container .image img{
+    height:250px;
+    width:250px;
+    border: solid 3px #fff;
+    border-radius: 2rem;
+    margin:2rem 0 0 4.5rem;
+}
+
+
+#nifti-section{
+    padding:7% 15%;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+#nifti-section h1{
+    margin:1.5rem 0;
+    color: #0685ab;
+}
+#nifti-section h1 span{ 
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+#nifti-section p{
+    text-align: justify;
+    color:#5c5858;
+}
+
+#nifti-section .img-container{
+    margin:3rem 0;
+}
+#nifti-section .img-container img{
+    border-radius: 1.5rem;
+    margin:0 1rem;
+    border: solid 3px #0eb9ed;
+    border-radius: 2rem;
+    height: 250px;
+    width: 225px;
+}
+
+/* predict section */
+
+#predict-tumor{
+    padding:5rem 0 10rem;
+    text-align: center;
+    background-color: #0eb9ed;
+}
+.predict-text{
+    font-weight: 900;
+    font-size: 2rem;
+    color:#fff;
+    letter-spacing: 2px;
+}
+.upload-div{
+    margin: 2rem 0 0;
+}
+.upload-div form button{
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    color:#0eb9ed;  
+    border-radius: 0.25rem;
+    letter-spacing: 1px;
+    border: 0;
+    border: solid 2px #5FAEB3;
+    font-weight: 700;
+}
+.upload-div form button:hover{
+    background-color: #0685ab;
+    color:white;
+    font-weight: 600;
+}
+.upload-div form input{
+    width:50%;
+    padding:0.5rem 1rem;
+    border: solid 0.125rem #fff;
+    border-radius: 0.25rem;
+    color: white;
+}
+#predict-tumor{
+    padding: 10rem 0 15rem; 
+}
+#predict-tumor .container{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 0;
+    background-color: #0eb9ed;
+    color:#fff;
+}
+#predict-tumor .item{
+    margin:0 2rem;
+}
+#predict-tumor .container .item img{
+    height: 250px;
+    width: 250px;
+    border: solid #fff 0.2rem;
+    border-radius: 1rem;
+}
+#predict-tumor .item p{
+    text-align: center;
+    margin: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+.results-div{
+    text-align: center;
+    margin:4rem 20rem 0;
+    border: solid #fff 0.1rem;
+    border-radius: 0.5rem;
+}
+.results-div h3{
+    background-color: #fff;
+    color:#0685ab;
+    padding: 1rem;
+}
+.results-div p{
+    padding:2rem;
+    font-size: 1rem;
+    color:white;
+}
+#about {
+    background-color: #fff;
+    color: #0685ab;
+    padding: 5% 15% 0;
+}
+#about .container .text h1{
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+#about .container .item h2{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+#about .container .text{
+    display: block;
+    margin: 0 8rem 0 0;
+}
+#about .container .text p{
+    color:#646262;
+    padding:1rem 0;
+    width: 75%;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 600;
+}
+#about .container{
+    display: flex;
+}
+#about .container .item{
+    margin: 0 3rem 0 0;
+    display: block;
+}
+#about .container .item ul{
+    text-align: left;
+}
+#about .container .item ul li{
+    display: block;
+    margin: 1.25rem 0;
+    font-size: 0.90rem;
+}
+#about .container .item ul li a{
+    text-decoration: none;
+    color:#0685ab;
+}
+#about .container .item ul li a:hover{
+    text-decoration: underline;
+}
+footer{
+    background-color: #fff;
+    color: #0685ab;
+    padding: 1rem 15% 0;
+    margin-bottom: 0;
+}
+footer p{
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+
+
+

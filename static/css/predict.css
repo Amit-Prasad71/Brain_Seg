@@ -1,0 +1,29 @@
+body{
+    font-family: 'Roboto Serif', serif;
+}
+.title-text{
+    text-align: center;
+    margin: 5rem 0 0;
+}
+.upload-div{
+    text-align: center;
+    margin: 5rem 0 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 0;
+}
+.item{
+    margin:0 2rem;
+}
+.item img{
+    height: 100%;
+    width: 100%;
+    border: solid black 0.1rem;
+}
+.results-div{
+    text-align: center;
+    margin: 2.5rem 20rem 0;
+    border: solid black 0.1rem;
+}

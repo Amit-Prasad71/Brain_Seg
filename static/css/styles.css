@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #5FAEB3;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    color: #fff;
+}
+nav div h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+nav ul li a{
+    letter-spacing: 0.05cm;
+    text-decoration: none;
+    color: #fff;
+    font-weight:400;
+    padding: 1px;
+}
+nav ul li a:hover{
+    border-bottom: solid 2px #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+#photos-div{
+    /* margin: 2rem 1rem 2rem 1rem; */
+    background: url("../images/bgi.jpg"); 
+    background-position: center;
+    background-size: cover;
+    color:#fff;
+    padding: 20rem;
+}
+#photos-div .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#photos-div .item img{
+    margin: 0 2rem;
+    border-radius: 1rem;
+    border: solid 0.1rem yellow;
+    height:250px;
+    width:250px;
+}
+/* .img2{
+    height:50%;
+    width:50%;
+} */
+#photos-div .item p{
+    text-align: center;
+    margin: 0 1rem;
+    color: yellow;
+    font-weight: 500;
+}
+.title-div{
+    padding:2rem 5rem;
+    line-height: 1.75;
+    font-size: 1.25rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/* predict section */
+
+#predict-tumor{
+    padding:5rem 0 10rem;
+    text-align: center;
+    background-color: #252330;
+}
+.predict-text{
+    font-weight: 900;
+    font-size: 2rem;
+    color:#5FAEB3;
+    letter-spacing: 2px;
+}
+.upload-div{
+    margin: 2rem 0 0;
+}
+.upload-div form button{
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    color:#5FAEB3;  
+    border-radius: 0.25rem;
+    letter-spacing: 1px;
+    border: 0;
+    border: solid 2px #5FAEB3;
+    font-weight: 700;
+}
+.upload-div form button:hover{
+    background-color: #5FAEB3;
+    color:white;
+    font-weight: 600;
+}
+.upload-div form input{
+    width:50%;
+    padding:0.5rem 1rem;
+    border: solid 0.125rem #5FAEB3;
+    border-radius: 0.25rem;
+    color: white;
+}
+#predict-tumor .container{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 0;
+}
+#predict-tumor .item{
+    margin:0 2rem;
+}
+#predict-tumor .container .item img{
+    height: 250px;
+    width: 250px;
+    border: solid yellow 0.1rem;
+    border-radius: 1rem;
+}
+#predict-tumor .item p{
+    text-align: center;
+    margin: 1rem;
+    color: yellow;
+    font-weight: 500;
+}
+.results-div{
+    text-align: center;
+    margin:4rem 20rem 0;
+    border: solid #5FAEB3 0.1rem;
+    border-radius: 0.5rem;
+}
+.results-div h3{
+    background-color: #5faeb4;
+    color:#fff;
+    padding: 1rem;
+}
+.results-div p{
+    padding:2rem;
+    font-size: 1rem;
+    color:white;
+}
+
+footer {
+    background-color: #5faeb4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
